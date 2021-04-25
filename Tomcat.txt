@@ -1,0 +1,29 @@
+Tomcat:-
+first copy to a pemfile
+scp -i pemfile.pem sa
+scp -i pemfile.pem pemfile.pem ec2-user@pub ip:/home/ec2-user pemfile.pem
+ssh -i pemfile.pem ec2-user@pub ip
+ls
+for pem file permission chmod 400 pemfile.pem
+ssh -i pemfile.pem pri ip
+convert to rootuser sudo su
+cd /tmp
+ls
+download the java
+install the jdk 
+cd /opt
+download the tomcat:-https://downloads.apache.org/tomcat/tomcat-9/v9.0.41/bin/apache-tomcat-9.0.41-windows-x86.zip
+ls
+unzip the tomcat:-unzip apache-tomcat-9.0.38-windows-x64.zip
+remove the downloaded tomcat zip:-rm -f apache-tomcat-9.0.38-windows-x64.zip
+ls
+rename the folder:-mv apache-tomcat-9.0.38 tomcat9
+cd tomcat
+ls
+cd bin/
+ls
+chmod 755*.sh
+./startup.sh
+ps -ef | grep tomcat
+
+
